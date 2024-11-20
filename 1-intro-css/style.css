@@ -1,0 +1,54 @@
+/* Selectores de etiqueta */
+body{
+background-color: lemonchiffon;
+}
+
+h1{
+color: maroon;
+}
+
+p{
+    text-decoration: underline;
+}
+
+/* Alt+Shift+A para comentarios */
+
+a{
+    text-decoration: none; 
+    background-color: rgb(88, 70, 31);
+    color: white;
+    
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 15px;
+}
+
+/* Selector de clase */
+.ball{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-color: crimson;
+    border: 3px solid lemonchiffon;
+}
+
+.text-important{
+    font-size: 2rem;
+    background-color: magenta;
+    font-style: oblique;
+}
+/* 1rem equivale a 16px, que es el tamaño de fuente estándar de la web. Se pueden usar decimales. 2rem es el equivalente a un H1 */
+
+/* Selector de identificador */
+#tituloweb{
+    background-color: rgb(255, 255, 255);
+    font-family: "Sour Gummy", serif;
+}
+
+/* Selector universal */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
