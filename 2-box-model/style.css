@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mandali", sans-serif;
+}
+
+body{
+    background-color: hsl(46.63deg 88.3% 63.14%);
+}
+
+.card{
+    background-color: white;
+    /* Para margin: primer valor en "y", segundo valor en "x" */
+    margin: 100px auto;
+    width: 430px;
+    padding: 25px;
+    border-radius: 15px;
+    /* Para border: grosor del borde, estilo de trazo, color */
+    border: 1px solid black;
+    /* Para la sombra: distancia en "x", distancia en "y", difuminación, color */
+    box-shadow: 9px 9px 0px black;
+}
+
+/* Selector descendente: busca una posición a partir del padre. Forma parte de los selectores avanzados.*/
+.card span{
+    display: inline-block;
+    background-color: hsl(46.63deg 88.3% 63.14%);
+    padding: 2px 12px;
+    border-radius: 4px;
+    font-weight: bolder;
+}
+
+.card small{
+    display: block;
+    margin-top: 10px;
+    font-weight: bolder;
+}
+
+/* ">" para seleccionar las imágenes hijas directas de "card". Sin esa selección también contaría la imagen del Div */
+.card > img{
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.card > p{
+    color: gray;
+    line-height: 23px;
+    font-size: 18px;
+}
+
+.user-info-box{
+    margin-top: 20px;
+}
+
+.user-info-box img{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.user-info-box p{
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: bolder;
+}
+
+a{
+    text-decoration: none; 
+    background-color: rgb(88, 70, 31);
+    color: white;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 30px;
+    border-radius: 15px;
+}
