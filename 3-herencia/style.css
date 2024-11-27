@@ -1,0 +1,58 @@
+/* Siempre resetear estos 3 valores al menos */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: blueviolet;
+    text-shadow: 1px 1px 1px black;
+}
+
+a{
+    text-decoration: none;
+    /* inherit toma la propiedad del elemento padre */
+    /* color: inherit; */
+    color: white;
+    background-color: rgb(120, 0, 52);
+}
+
+/* La clase sobreescribe el selector del body (especificidad). LO MÁS ESPECÍFICO TIENE MÁS FUERZA */
+.diferente{
+    text-shadow: none;
+    color: rgb(238, 2, 136);
+}
+
+/* span dentro del h1; es más específico */
+h1 span{
+    background-color: rgb(242, 153, 228);
+    text-shadow: none;
+}
+
+ul{}
+
+li{}
+
+p{}
+
+/* Lo ÚLTIMO siempre sobreescribe lo primero */
+a{
+    color: black;
+    background-color: deeppink;
+    text-shadow: none;
+}
+
+/* Ejemplo de especificidad */
+.blue{
+    color: darkslateblue;
+}
+
+#red{
+    color: crimson;
+}
+
+/* Es la que manda */
+h1{
+    color: greenyellow !important;
+}
