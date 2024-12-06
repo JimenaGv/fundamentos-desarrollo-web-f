@@ -108,3 +108,108 @@ header{
 }
 
 /* Elementos sueltos permiten otro tipo de interacciones */
+
+/* Sección productos */
+
+#productos{
+    background-color: lightgray;
+}
+
+#productos > .container{
+    background-color: rgb(115, 115, 115);
+}
+
+.productos-content{
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+}
+
+.product-card{
+    flex:1;
+    position: relative;
+    border-radius: 30px;
+    /* Overflow hidden crea una máscara de recorte. Overflow tiene otras funciones como permitir el scroll en una caja */
+    overflow: hidden;
+}
+
+/* .productos-content div:nth-child(1){
+    background-color: rgb(31,167,235);
+} */
+
+/* .productos-content div:nth-child(2){
+    background-color: rgb(152,234,20);
+} */
+
+.productos-content div:nth-child(3){
+    background-color: tomato;
+}
+
+/* Cuando el cursor esté sobre product-card, entonces se mostrará lo que hay en card-hover (se ejecuta)*/
+.product-card:hover .card-hover{
+    /* Para cambiar el estado natural de card-hover, de oculto o none pasa a mostrarse */
+    /* display: flex; */
+    opacity: 1;
+}
+
+/* Card Hover */
+.card-hover{
+   /*  display: none; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.51) !important;
+    top: 0;
+    left: 0;
+
+    /* Para hacer el efecto de desvanecimiento */
+    opacity: 0;
+    transition-duration: .5s;
+}
+
+.card-hover-header{
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-hover-header a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card-hover-footer{
+    padding: 15px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.card-hover-footer i{
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.btn-guardar{
+    background-color: rgb(244, 48, 48);
+    color: white;
+    padding: 15px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.product-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

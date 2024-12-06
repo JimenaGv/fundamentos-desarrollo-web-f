@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sour Gummy";
+}
+
+body{
+    background-color: rgb(237, 237, 225);
+}
+
+.container{
+    max-width: 1000px;
+    margin: auto;
+}
+
+header{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+}
+
+section p{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    font-family: "Pacifico";
+    color: rgb(72, 49, 15);
+}
+
+.container-nav{
+    /* background-color: blueviolet; */
+    padding: 20px 0px;
+}
+
+.container-nav ol{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container-nav ol li{
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0px;
+
+    position: relative;
+}
+
+.container-nav img{
+    width: 90%;
+    border-radius: 30px;
+    border: 10px double rgb(72, 49, 15);
+    margin-top: 10px;
+
+    position: relative;
+}
+
+.container-nav ol li::before {
+    content: counter(item); /* Genera el número */
+    counter-increment: item; /* Incrementa el contador */
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgb(249 194 60);
+    color: rgb(72, 49, 15);
+    box-shadow: 2px 5px 10px rgb(68, 52, 39);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 100%;
+    z-index: 1; /* Para asegurarse de que esté encima de la imagen */
+}
+
+/* Configura el contador para que inicie desde 1 */
+.container-nav ol {
+    counter-reset: item;
+}
+
+.container-nav ol li a{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(72, 49, 15);
+    padding: 10px 30px;
+    border-radius: 15px;
+}
+
+footer img{
+    width: 100px;
+}
+
+.container-nav ol li a:hover{
+    background-color: rgb(249 194 60);
+    color: rgb(72, 49, 15);
+}
